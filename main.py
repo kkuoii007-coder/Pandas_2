@@ -14,3 +14,9 @@ students = [
     {'name': 'Маша Васнецова', 'math': 5, 'physics': 5, 'chemistry': 5, 'russian': 5, 'english': 5}
     ]
 
+df = pd.DataFrame(students)
+print(df.head())
+print()
+print(df[['math', 'physics', 'chemistry', 'russian', 'english']].mean())
+
+
