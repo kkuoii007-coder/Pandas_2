@@ -18,5 +18,13 @@ df = pd.DataFrame(students)
 print(df.head())
 print()
 print(df[['math', 'physics', 'chemistry', 'russian', 'english']].mean())
-
+print()
+print(df[['math', 'physics', 'chemistry', 'russian', 'english']].median())
+print()
+Q1 = df['math'].quantile(0.25)
+Q3 = df['math'].quantile(0.75)
+IQR = Q3 - Q1
+print(Q1, Q3, IQR)
+print()
+print(df[['math', 'physics', 'chemistry', 'russian', 'english']].std())
 
